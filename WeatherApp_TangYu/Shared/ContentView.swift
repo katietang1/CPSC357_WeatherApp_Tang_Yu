@@ -9,10 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 1
+    @StateObject var viewModel = WeatherViewModel()
     var body: some View {
         TabView(selection: $selection){
-            
-            Text("weather stuff here")
+            VStack{
+                Text(viewModel.timezone)
+                    .font(.system(size: 32))
+                Text(viewModel.temp)
+                    .font(.system(size: 44))
+                Text(viewModel.title)
+                    .font(.system(size: 24))
+                Text(viewModel.descriptionText)
+                    .font(.system(size: 24))
+            }
                 .tabItem {
                     Label("Forecast", systemImage: "cloud")
                 } .tag(1)

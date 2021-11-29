@@ -15,6 +15,10 @@
 		4AF6CFF4274ACE660027C6D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6CFC9274ACE620027C6D7 /* ContentView.swift */; };
 		4AF6CFF5274ACE660027C6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6CFCA274ACE660027C6D7 /* Assets.xcassets */; };
 		4AF6CFF6274ACE660027C6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6CFCA274ACE660027C6D7 /* Assets.xcassets */; };
+		8AAD68DC2754749D00C11383 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD68DB2754749D00C11383 /* ViewModels.swift */; };
+		8AAD68DD2754749D00C11383 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD68DB2754749D00C11383 /* ViewModels.swift */; };
+		8AAD68DF275474B800C11383 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD68DE275474B800C11383 /* Models.swift */; };
+		8AAD68E0275474B800C11383 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD68DE275474B800C11383 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		4AF6CFEA274ACE660027C6D7 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF6CFEE274ACE660027C6D7 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		4AF6CFF0274ACE660027C6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AAD68DB2754749D00C11383 /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
+		8AAD68DE275474B800C11383 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,8 @@
 			children = (
 				4AF6CFC8274ACE620027C6D7 /* WeatherApp_TangYuApp.swift */,
 				4AF6CFC9274ACE620027C6D7 /* ContentView.swift */,
+				8AAD68DE275474B800C11383 /* Models.swift */,
+				8AAD68DB2754749D00C11383 /* ViewModels.swift */,
 				4AF6CFCA274ACE660027C6D7 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -309,7 +317,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AF6CFF3274ACE660027C6D7 /* ContentView.swift in Sources */,
+				8AAD68DC2754749D00C11383 /* ViewModels.swift in Sources */,
 				4AF6CFF1274ACE660027C6D7 /* WeatherApp_TangYuApp.swift in Sources */,
+				8AAD68DF275474B800C11383 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +328,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AF6CFF4274ACE660027C6D7 /* ContentView.swift in Sources */,
+				8AAD68DD2754749D00C11383 /* ViewModels.swift in Sources */,
 				4AF6CFF2274ACE660027C6D7 /* WeatherApp_TangYuApp.swift in Sources */,
+				8AAD68E0275474B800C11383 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
