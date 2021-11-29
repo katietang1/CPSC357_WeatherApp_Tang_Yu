@@ -35,7 +35,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("My Closet", systemImage: "face.smiling")
                     //tried to use tshirt but didnt work
-                } .tag(3)
+                }.tag(3)
             
         }.font(.largeTitle)
     }
@@ -45,5 +45,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }
