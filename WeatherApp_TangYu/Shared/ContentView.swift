@@ -19,8 +19,6 @@ struct ContentView: View {
                     .font(.system(size: 44))
                 Text(viewModel.title)
                     .font(.system(size: 24))
-                Text(viewModel.descriptionText)
-                    .font(.system(size: 24))
             }
                 .tabItem {
                     Label("Forecast", systemImage: "cloud")
