@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A85328F2759776B000B57DC /* OOTD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A85328E2759776B000B57DC /* OOTD.swift */; };
+		4A8532902759776B000B57DC /* OOTD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A85328E2759776B000B57DC /* OOTD.swift */; };
 		4AF6CFE4274ACE660027C6D7 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6CFE3274ACE660027C6D7 /* Tests_iOS.swift */; };
 		4AF6CFEF274ACE660027C6D7 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6CFEE274ACE660027C6D7 /* Tests_macOS.swift */; };
 		4AF6CFF1274ACE660027C6D7 /* WeatherApp_TangYuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6CFC8274ACE620027C6D7 /* WeatherApp_TangYuApp.swift */; };
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A85328E2759776B000B57DC /* OOTD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOTD.swift; sourceTree = "<group>"; };
 		4AF6CFC8274ACE620027C6D7 /* WeatherApp_TangYuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp_TangYuApp.swift; sourceTree = "<group>"; };
 		4AF6CFC9274ACE620027C6D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4AF6CFCA274ACE660027C6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 			children = (
 				4AF6CFC8274ACE620027C6D7 /* WeatherApp_TangYuApp.swift */,
 				4AF6CFC9274ACE620027C6D7 /* ContentView.swift */,
+				4A85328E2759776B000B57DC /* OOTD.swift */,
 				8AAD68DE275474B800C11383 /* Models.swift */,
 				8AAD68DB2754749D00C11383 /* ViewModels.swift */,
 				4AF6CFCA274ACE660027C6D7 /* Assets.xcassets */,
@@ -316,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A85328F2759776B000B57DC /* OOTD.swift in Sources */,
 				4AF6CFF3274ACE660027C6D7 /* ContentView.swift in Sources */,
 				8AAD68DC2754749D00C11383 /* ViewModels.swift in Sources */,
 				4AF6CFF1274ACE660027C6D7 /* WeatherApp_TangYuApp.swift in Sources */,
@@ -327,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8532902759776B000B57DC /* OOTD.swift in Sources */,
 				4AF6CFF4274ACE660027C6D7 /* ContentView.swift in Sources */,
 				8AAD68DD2754749D00C11383 /* ViewModels.swift in Sources */,
 				4AF6CFF2274ACE660027C6D7 /* WeatherApp_TangYuApp.swift in Sources */,
