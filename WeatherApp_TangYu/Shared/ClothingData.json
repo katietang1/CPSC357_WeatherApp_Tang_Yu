@@ -1,0 +1,10 @@
+[
+    {
+        "id": "aa32jj887hhg55",
+        "name": "Trench Coat",
+        "clothingType": "jacket",
+        "description": "Keeps you warm and has lots of pockets!",
+        "weatherType": "cold",
+        "season": "winter"
+    }
+]
