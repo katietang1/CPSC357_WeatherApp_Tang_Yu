@@ -17,11 +17,11 @@ struct Forecast: View {
                 Text("Today's Forecast") //need to change to current date 
                     .font(.system(size: 20, weight: .medium, design: .default))
                     .foregroundColor(.white)
-                Text(viewModel.timezone)
+                Text("Orange")
                     .font(.system(size: 25, weight: .medium, design: .default))
                     .foregroundColor(.white)
             VStack{
-                Image(systemName: isNight ? "moon.stars.fill" : "cloud.sun.fill")
+                Image(systemName: isNight ? checkWeather(viewModel.title) : checkWeather(viewModel.title))
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -48,7 +48,31 @@ struct Forecast: View {
             }
         }
     }
+    func checkWeather(_ weather: String) -> String{
+        switch weather{
+        case "Clear":
+            return "sun.max.fill"
+        case "Haze":
+            return "sun.haze.fill"
+        case "Rain":
+            return "cloud.rain.fill"
+        case "Drizzle":
+            return "cloud.drizzle.fill"
+        case "Thunderstorm":
+            return "cloud.bolt.rain.fill"
+        case "Snow":
+            return "cloud.snow.fill"
+        case "Clouds":
+            return "cloud.fill"
+        case "Fog":
+            return "cloud.fog.fill"
+        default:
+            return "sun.max.fill"
+        }
+    }
 }
+
+
 
 struct BackgroundView: View {
     var topColor: Color
