@@ -14,7 +14,8 @@ struct Forecast: View {
         ZStack {
             BackgroundView(topColor: isNight ? .black : .blue, bottomColor: isNight ? .gray : Color("lightBlue"))
             VStack{
-                Text("Today's Forecast") //need to change to current date 
+                Spacer()
+                Text(getCurrentDate())
                     .font(.system(size: 20, weight: .medium, design: .default))
                     .foregroundColor(.white)
                 Text("Orange")
@@ -69,6 +70,15 @@ struct Forecast: View {
         default:
             return "sun.max.fill"
         }
+    }
+    
+    func getCurrentDate() -> String {
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        dateFormatter.setLocalizedDateFormatFromTemplate("MMMM, dd, yyyy")
+        return dateFormatter.string(from: date)
+        
     }
 }
 
