@@ -9,10 +9,9 @@ import SwiftUI
 
 struct Forecast: View {
     @StateObject var viewModel = WeatherViewModel()
-    @State private var isNight = false
     var body: some View {
         ZStack {
-            BackgroundView(topColor: isNight ? .black : .blue, bottomColor: isNight ? .gray : Color("lightBlue"))
+            BackgroundView(topColor: getCurrentTime() ? .black : .blue, bottomColor: getCurrentTime() ? .gray : Color("lightBlue"))
             VStack{
                 Spacer()
                 Text(getCurrentDate())
@@ -22,7 +21,7 @@ struct Forecast: View {
                     .font(.system(size: 25, weight: .medium, design: .default))
                     .foregroundColor(.white)
             VStack{
-                Image(systemName: isNight ? checkWeather(viewModel.title) : checkWeather(viewModel.title))
+                Image(systemName: getCurrentTime() ? checkWeather(viewModel.title) : checkWeather(viewModel.title))
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -35,16 +34,16 @@ struct Forecast: View {
                     .foregroundColor(.white)
                 }
                 Spacer()
-                Button {
-                    isNight.toggle()
-                } label: {
-                    Text("Switch Day Time")
-                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.blue)
-                        .background(Color("opacityBlue"))
-                        .font(.system(size: 15))
-                        .cornerRadius(10)
-                }
+//                Button {
+//                    getCurrentTime().toggle()
+//                } label: {
+//                    Text("Switch Day Time")
+//                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                        .foregroundColor(.blue)
+//                        .background(Color("opacityBlue"))
+//                        .font(.system(size: 15))
+//                        .cornerRadius(10)
+//                }
                 Spacer()
             }
         }
@@ -79,6 +78,20 @@ struct Forecast: View {
         dateFormatter.setLocalizedDateFormatFromTemplate("MMMM, dd, yyyy")
         return dateFormatter.string(from: date)
         
+    }
+    
+    func getCurrentTime() -> Bool {
+        var isNight: Bool
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        if hour >= 20
+        {
+            isNight = true
+        } else {
+            isNight = false
+        }
+        return isNight
     }
 }
 
