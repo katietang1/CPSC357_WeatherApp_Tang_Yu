@@ -20,7 +20,7 @@ struct AddNewClothing: View {
         // creating form user to add new item
         Form {
             Section(header: Text("Clothing Details")) {
-                Image(systemName: "person.circle.fill")
+                Image(systemName: "paintpalette.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .foregroundColor(Color.blue)
@@ -44,7 +44,8 @@ struct AddNewClothing: View {
                         weatherType: weatherType,
                         imageName: "trenchcoat" )
         clothingStore.clothing.append(newClothing)
-    }
+    } //drop down clothing type to top, bottom, shoes, or acessories
+    //drop down weather type to cold, warm, or rain
 }
 
 struct DataInput: View {
