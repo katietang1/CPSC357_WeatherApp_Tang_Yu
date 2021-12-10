@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0BC4DE2763137A0014ABB3 /* CharacterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BC4DD2763137A0014ABB3 /* CharacterAssets.xcassets */; };
+		4A0BC4DF2763137A0014ABB3 /* CharacterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BC4DD2763137A0014ABB3 /* CharacterAssets.xcassets */; };
+		4A0BC4E1276313E20014ABB3 /* ClothingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BC4E0276313E20014ABB3 /* ClothingStore.swift */; };
+		4A0BC4E2276313E20014ABB3 /* ClothingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BC4E0276313E20014ABB3 /* ClothingStore.swift */; };
+		4A0BC4E4276314680014ABB3 /* ClothingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BC4E3276314680014ABB3 /* ClothingData.swift */; };
+		4A0BC4E5276314680014ABB3 /* ClothingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BC4E3276314680014ABB3 /* ClothingData.swift */; };
+		4A0BC4E7276314C60014ABB3 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BC4E6276314C60014ABB3 /* Clothing.swift */; };
+		4A0BC4E8276314C60014ABB3 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BC4E6276314C60014ABB3 /* Clothing.swift */; };
+		4A0BC4EA2763157E0014ABB3 /* ClothingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BC4E92763157E0014ABB3 /* ClothingDetail.swift */; };
+		4A0BC4EB2763157E0014ABB3 /* ClothingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BC4E92763157E0014ABB3 /* ClothingDetail.swift */; };
+		4A0BC4ED276316810014ABB3 /* AddNewClothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BC4EC276316810014ABB3 /* AddNewClothing.swift */; };
+		4A0BC4EE276316810014ABB3 /* AddNewClothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BC4EC276316810014ABB3 /* AddNewClothing.swift */; };
 		4A85328F2759776B000B57DC /* OOTD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A85328E2759776B000B57DC /* OOTD.swift */; };
 		4A8532902759776B000B57DC /* OOTD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A85328E2759776B000B57DC /* OOTD.swift */; };
 		4A85329227597889000B57DC /* MyCloset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A85329127597889000B57DC /* MyCloset.swift */; };
@@ -47,6 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A0BC4DD2763137A0014ABB3 /* CharacterAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CharacterAssets.xcassets; sourceTree = "<group>"; };
+		4A0BC4E0276313E20014ABB3 /* ClothingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingStore.swift; sourceTree = "<group>"; };
+		4A0BC4E3276314680014ABB3 /* ClothingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingData.swift; sourceTree = "<group>"; };
+		4A0BC4E6276314C60014ABB3 /* Clothing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
+		4A0BC4E92763157E0014ABB3 /* ClothingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingDetail.swift; sourceTree = "<group>"; };
+		4A0BC4EC276316810014ABB3 /* AddNewClothing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewClothing.swift; sourceTree = "<group>"; };
 		4A85328E2759776B000B57DC /* OOTD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOTD.swift; sourceTree = "<group>"; };
 		4A85329127597889000B57DC /* MyCloset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCloset.swift; sourceTree = "<group>"; };
 		4A853294275978DE000B57DC /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
@@ -123,6 +141,12 @@
 				4A85328E2759776B000B57DC /* OOTD.swift */,
 				8AAD68DE275474B800C11383 /* Models.swift */,
 				8AAD68DB2754749D00C11383 /* ViewModels.swift */,
+				4A0BC4DD2763137A0014ABB3 /* CharacterAssets.xcassets */,
+				4A0BC4E0276313E20014ABB3 /* ClothingStore.swift */,
+				4A0BC4E92763157E0014ABB3 /* ClothingDetail.swift */,
+				4A0BC4EC276316810014ABB3 /* AddNewClothing.swift */,
+				4A0BC4E3276314680014ABB3 /* ClothingData.swift */,
+				4A0BC4E6276314C60014ABB3 /* Clothing.swift */,
 				4AF6CFCA274ACE660027C6D7 /* Assets.xcassets */,
 				8AADD54A275DB75E00CA39C5 /* ClothingData.json */,
 			);
@@ -299,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0BC4DE2763137A0014ABB3 /* CharacterAssets.xcassets in Resources */,
 				4AF6CFF5274ACE660027C6D7 /* Assets.xcassets in Resources */,
 				8AADD54B275DB75E00CA39C5 /* ClothingData.json in Resources */,
 			);
@@ -308,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0BC4DF2763137A0014ABB3 /* CharacterAssets.xcassets in Resources */,
 				4AF6CFF6274ACE660027C6D7 /* Assets.xcassets in Resources */,
 				8AADD54C275DB75E00CA39C5 /* ClothingData.json in Resources */,
 			);
@@ -336,10 +362,15 @@
 			files = (
 				4A85328F2759776B000B57DC /* OOTD.swift in Sources */,
 				4AF6CFF3274ACE660027C6D7 /* ContentView.swift in Sources */,
+				4A0BC4ED276316810014ABB3 /* AddNewClothing.swift in Sources */,
 				4A853295275978DE000B57DC /* Forecast.swift in Sources */,
+				4A0BC4E1276313E20014ABB3 /* ClothingStore.swift in Sources */,
 				8AAD68DC2754749D00C11383 /* ViewModels.swift in Sources */,
 				4A85329227597889000B57DC /* MyCloset.swift in Sources */,
 				4AF6CFF1274ACE660027C6D7 /* WeatherApp_TangYuApp.swift in Sources */,
+				4A0BC4EA2763157E0014ABB3 /* ClothingDetail.swift in Sources */,
+				4A0BC4E7276314C60014ABB3 /* Clothing.swift in Sources */,
+				4A0BC4E4276314680014ABB3 /* ClothingData.swift in Sources */,
 				8AAD68DF275474B800C11383 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,10 +381,15 @@
 			files = (
 				4A8532902759776B000B57DC /* OOTD.swift in Sources */,
 				4AF6CFF4274ACE660027C6D7 /* ContentView.swift in Sources */,
+				4A0BC4EE276316810014ABB3 /* AddNewClothing.swift in Sources */,
 				4A853296275978DE000B57DC /* Forecast.swift in Sources */,
+				4A0BC4E2276313E20014ABB3 /* ClothingStore.swift in Sources */,
 				8AAD68DD2754749D00C11383 /* ViewModels.swift in Sources */,
 				4A85329327597889000B57DC /* MyCloset.swift in Sources */,
 				4AF6CFF2274ACE660027C6D7 /* WeatherApp_TangYuApp.swift in Sources */,
+				4A0BC4EB2763157E0014ABB3 /* ClothingDetail.swift in Sources */,
+				4A0BC4E8276314C60014ABB3 /* Clothing.swift in Sources */,
+				4A0BC4E5276314680014ABB3 /* ClothingData.swift in Sources */,
 				8AAD68E0275474B800C11383 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
