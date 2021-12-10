@@ -33,6 +33,7 @@ struct AddNewClothing: View {
             }
             Button(action: addNewClothing) {
                 Text("Add Clothes")
+                //maybe show a message that its been added, or make it go back to list
             }
         }
     }
