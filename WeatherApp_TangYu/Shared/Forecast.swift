@@ -34,16 +34,6 @@ struct Forecast: View {
                     .foregroundColor(.white)
                 }
                 Spacer()
-//                Button {
-//                    getCurrentTime().toggle()
-//                } label: {
-//                    Text("Switch Day Time")
-//                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-//                        .foregroundColor(.blue)
-//                        .background(Color("opacityBlue"))
-//                        .font(.system(size: 15))
-//                        .cornerRadius(10)
-//                }
                 Spacer()
             }
         }
