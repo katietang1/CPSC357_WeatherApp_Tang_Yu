@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct OOTD: View {
+   
     var body: some View {
-        Text("YASSS")
+        Text("OOTD")
         
     }
+
 }
+
+
 
 struct OOTD_Previews: PreviewProvider {
     static var previews: some View {
