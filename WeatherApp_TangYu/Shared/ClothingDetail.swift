@@ -26,6 +26,10 @@ struct ClothingDetail: View {
                                 .font(.headline)
                             Text(selectedClothing.description)
                                 .font(.body)
+                            Text(selectedClothing.clothingType)
+                                .font(.body)
+                            Text(selectedClothing.weatherType)
+                                .font(.body)
                             HStack {
 //                                Text("Alive or Dead").font(.headline)
 //                                Spacer()

@@ -11,7 +11,7 @@ struct OOTD: View {
    
     var body: some View {
         ZStack{
-            BackgroundView(topColor:.pink, bottomColor: .purple)
+            BackgroundView(topColor:.orange, bottomColor: .purple)
             VStack{
                 Text("Based on today's weather, you should wear:")
                     .foregroundColor(.white)

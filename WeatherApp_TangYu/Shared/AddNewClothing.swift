@@ -12,10 +12,14 @@ struct AddNewClothing: View {
     // states of the different attributes
     @StateObject var clothingStore : ClothingStore
     @State private var name: String = ""
-    @State private var clothingType: String = ""
-    @State private var weatherType: String = ""
     @State private var description: String = ""
     
+    var weatherTypes = ["Clear", "Rain", "Snow", "Fog", "Haze", "Thunderstorm", "Clouds", "Drizzle"]
+    @State private var weatherType: String = ""
+    
+    var clothingTypes = ["Top", "Pants", "Shoes", "Accessories"]
+    @State private var clothingType: String = ""
+
     var body: some View {
         // creating form user to add new item
         Form {
@@ -26,9 +30,21 @@ struct AddNewClothing: View {
                     .foregroundColor(Color.blue)
                     .padding()
                 DataInput(title: "Name", userInput: $name)
-                DataInput(title: "Clothing type", userInput: $clothingType)
-                DataInput(title: "Weather type", userInput: $weatherType)
                 DataInput(title: "Description", userInput: $description)
+                
+                Text("Weather Types")
+                Picker(selection: $weatherType, label: Text("Weather Types")) {
+                    ForEach(0 ..< weatherTypes.count){
+                        Text(weatherTypes[$0])
+                    }
+                }.pickerStyle(WheelPickerStyle())
+                
+                Text("Clothing Types")
+                Picker(selection: $clothingType, label: Text("Clothing Types")) {
+                    ForEach(0 ..< clothingTypes.count){
+                        Text(clothingTypes[$0]).tag(clothingType)
+                    }
+                }.pickerStyle(WheelPickerStyle())
                 .padding()
             }
             Button(action: addNewClothing) {
@@ -38,15 +54,16 @@ struct AddNewClothing: View {
         }
     }
     func addNewClothing() {
-        let newClothing = Clothing(id: UUID().uuidString,
+        let newClothing =
+            Clothing(id: UUID().uuidString,
                         name: name,
                         clothingType: clothingType,
                         description: description,
                         weatherType: weatherType,
                         imageName: "trenchcoat" )
         clothingStore.clothing.append(newClothing)
-    } //drop down clothing type to top, bottom, shoes, or acessories
-    //drop down weather type to cold, warm, or rain
+        // choosing from the picker doesn't store the value in the variable
+    }
 }
 
 struct DataInput: View {
