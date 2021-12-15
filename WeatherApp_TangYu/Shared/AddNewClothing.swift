@@ -33,19 +33,20 @@ struct AddNewClothing: View {
                 DataInput(title: "Description", userInput: $description)
                 
                 Text("Weather Types")
-                Picker(selection: $weatherType, label: Text("Weather Types")) {
-                    ForEach(0 ..< weatherTypes.count){
-                        Text(weatherTypes[$0])
+                Picker(selection: $weatherType, label: Text("Weather Type")) {
+                    ForEach(weatherTypes, id: \.self){ weather in
+                        Text(weather)
                     }
                 }.pickerStyle(WheelPickerStyle())
                 
                 Text("Clothing Types")
-                Picker(selection: $clothingType, label: Text("Clothing Types")) {
-                    ForEach(0 ..< clothingTypes.count){
-                        Text(clothingTypes[$0]).tag(clothingType)
+                Picker(selection: $clothingType, label: Text("Clothing Type")) {
+                    ForEach(clothingTypes, id: \.self){ clothing in
+                        Text(clothing)
                     }
                 }.pickerStyle(WheelPickerStyle())
                 .padding()
+                
             }
             Button(action: addNewClothing) {
                 Text("Add Clothes")
@@ -61,6 +62,8 @@ struct AddNewClothing: View {
                         description: description,
                         weatherType: weatherType,
                         imageName: "trenchcoat" )
+        print("weather" + weatherType)
+        print("clothing" + clothingType)
         clothingStore.clothing.append(newClothing)
         // choosing from the picker doesn't store the value in the variable
     }
