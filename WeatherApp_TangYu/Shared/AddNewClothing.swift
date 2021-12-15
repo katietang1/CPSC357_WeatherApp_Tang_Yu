@@ -62,8 +62,6 @@ struct AddNewClothing: View {
                         description: description,
                         weatherType: weatherType,
                         imageName: "trenchcoat" )
-        print("weather" + weatherType)
-        print("clothing" + clothingType)
         clothingStore.clothing.append(newClothing)
         // choosing from the picker doesn't store the value in the variable
     }
