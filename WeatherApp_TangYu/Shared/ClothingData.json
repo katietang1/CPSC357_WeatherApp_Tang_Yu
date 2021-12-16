@@ -1,5 +1,6 @@
 [
     {
+        "id": "aa32jj887hhg55",
         "name": "Sherling Jacket",
         "clothingType": "Top",
         "description": "Keeps you warm and has soft lining!",
@@ -7,6 +8,7 @@
         "imageName": "sherlingjacket.jpg"
     },
     {
+        "id": "bb32jj887hhg66",
         "name": "Bomber Jacket",
         "clothingType": "Top",
         "description": "Warm and sleek",
@@ -14,6 +16,7 @@
         "imageName": "bomberjacket.jpg"
     },
     {
+        "id": "cc32jj887hhg77",
         "name": "Windbreaker",
         "clothingType": "Top",
         "description": "Can handle wind or rain",
@@ -21,6 +24,7 @@
         "imageName": "windbreaker.jpg"
     },
     {
+        "id": "dd32jj887hhg88",
         "name": "Cardigan",
         "clothingType": "Top",
         "description": "Slightly chilly? Put this on",
@@ -28,6 +32,7 @@
         "imageName": "cardigan.jpg"
     },
     {
+        "id": "ee32jj887hhg99",
         "name": "T-shirt",
         "clothingType": "Top",
         "description": "Basic casual wear",
@@ -35,6 +40,7 @@
         "imageName": "tshirt.jpg"
     },
     {
+        "id": "ff32jj887hhg11",
         "name": "Tank Top",
         "clothingType": "Top",
         "description": "Wear this when it's hot outside",
@@ -42,6 +48,7 @@
         "imageName": "tanktop.jpg"
     },
     {
+        "id": "gg32jj887hhg22",
         "name": "Blouse",
         "clothingType": "Top",
         "description": "Business casual or a nice brunch",
@@ -49,6 +56,7 @@
         "imageName": "blouse.jpg"
     },
     {
+        "id": "hh32jj887hhg33",
         "name": "Turtleneck",
         "clothingType": "Top",
         "description": "Keeps your neck warm",
@@ -56,6 +64,7 @@
         "imageName": "turtleneck.jpg"
     },
     {
+        "id": "ii32jj887hhg44",
         "name": "Cargo Pants",
         "clothingType": "Pants",
         "description": "Cute and stylish green pants",
@@ -63,6 +72,7 @@
         "imageName": "cargopants.jpg"
     },
     {
+        "id": "jj32jj887hhg55",
         "name": "Sweat Pants",
         "clothingType": "Pants",
         "description": "Warm and soft",
@@ -70,6 +80,7 @@
         "imageName": "sweatpants.jpg"
     },
     {
+        "id": "kk32jj887hhg66",
         "name": "Running Shorts",
         "clothingType": "Pants",
         "description": "Lightweight for activities",
@@ -77,6 +88,7 @@
         "imageName": "runningshorts.jpg"
     },
     {
+        "id": "ll32jj887hhg77",
         "name": "Flare Shorts",
         "clothingType": "Pants",
         "description": "Cute shorts for any casual wear",
@@ -84,6 +96,7 @@
         "imageName": "flareshorts.jpg"
     },
     {
+        "id": "mm32jj887hhg88",
         "name": "Loafers",
         "clothingType": "Shoes",
         "description": "Dress up or dress down",
@@ -91,6 +104,7 @@
         "imageName": "loafer.jpg"
     },
     {
+        "id": "nn32jj887hhg99",
         "name": "Flip Flops",
         "clothingType": "Shoes",
         "description": "Perfect beach shoes!",
@@ -98,6 +112,7 @@
         "imageName": "flipflop.jpg"
     },
     {
+        "id": "oo32jj887hhg11",
         "name": "Chealsa Boots",
         "clothingType": "Shoes",
         "description": "Favorite cold weather boots",
