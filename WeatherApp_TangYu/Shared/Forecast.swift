@@ -22,7 +22,7 @@ struct Forecast: View {
                     .font(.system(size: 25, weight: .medium, design: .default))
                     .foregroundColor(.white)
             VStack{
-                Image(systemName: checkWeather("Haze"))
+                Image(systemName: checkWeather(viewModel.title))
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
