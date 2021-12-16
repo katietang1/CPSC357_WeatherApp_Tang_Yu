@@ -11,12 +11,10 @@ struct OOTD: View {
     @StateObject var weather = WeatherViewModel()
     var body: some View {
         ZStack{
-            BackgroundView(topColor:.orange, bottomColor: .purple)
             VStack{
                     Text("✨Outfit of the Day✨")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                     Spacer()
                 VStack{
