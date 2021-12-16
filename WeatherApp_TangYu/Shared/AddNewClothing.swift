@@ -31,7 +31,7 @@ struct AddNewClothing: View {
                     .padding()
                 DataInput(title: "Name", userInput: $name)
                 DataInput(title: "Description", userInput: $description)
-                
+                //using picker to control user input for weather matching
                 Text("Weather Types")
                 Picker(selection: $weatherType, label: Text("Weather Type")) {
                     ForEach(weatherTypes, id: \.self){ weather in
@@ -50,10 +50,10 @@ struct AddNewClothing: View {
             }
             Button(action: addNewClothing) {
                 Text("Add Clothes")
-                //maybe show a message that its been added, or make it go back to list
             }
         }
     }
+    //function to add new clothing to the list
     func addNewClothing() {
         let newClothing =
             Clothing(id: UUID().uuidString,
@@ -63,7 +63,7 @@ struct AddNewClothing: View {
                         weatherType: weatherType,
                         imageName: "trenchcoat" )
         clothingStore.clothing.append(newClothing)
-        // choosing from the picker doesn't store the value in the variable
+
     }
 }
 

@@ -14,6 +14,7 @@ struct ClothingDetail: View {
     var body: some View {
         VStack {
             Form {
+                //when a clothing item is picked from the list, display user added details
                 Section(header: Text("Clothing Details")) {
                         Image(selectedClothing.imageName)
                         .resizable()

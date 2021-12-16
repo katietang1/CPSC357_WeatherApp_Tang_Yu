@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OOTD: View {
+    //puts together an outfit with top, bottom, shoes based on weather 
     @StateObject var weather = WeatherViewModel()
     var body: some View {
         ZStack{
@@ -46,7 +47,7 @@ struct OOTD: View {
         }
         
     }
-    
+    //display top based on weather
     func chooseTop() -> String{
         var topChosen: String = ""
         if weather.title == "Rain"{
@@ -79,7 +80,7 @@ struct OOTD: View {
         
         return topChosen
     }
-    
+    //display bottom based on weather
     func chooseBottom() -> String{
         var bottomChosen: String = ""
         
@@ -101,7 +102,7 @@ struct OOTD: View {
         
         return bottomChosen
     }
-    
+    //choose shoes based on weather
     func chooseShoes() -> String{
         var shoesChosen: String = ""
         

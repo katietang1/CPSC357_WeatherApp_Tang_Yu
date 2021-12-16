@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 
 var clothingData: [Clothing] = loadJson("ClothingData.json")
-
+//function to load data
 func loadJson<T: Decodable>(_ filename: String) -> T {
     let data: Data
     

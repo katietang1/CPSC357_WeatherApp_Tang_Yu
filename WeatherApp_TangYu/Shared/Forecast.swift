@@ -11,9 +11,11 @@ struct Forecast: View {
     @StateObject var viewModel = WeatherViewModel()
     var body: some View {
         ZStack {
+            // change background according to night or day
             BackgroundView(topColor: checkIfNight() ? .black : .blue, bottomColor: checkIfNight() ? .gray : Color("lightBlue"))
             VStack{
                 Spacer()
+                // calling current date function
                 Text(getCurrentDate())
                     .font(.system(size: 20, weight: .medium, design: .default))
                     .foregroundColor(.white)
@@ -22,6 +24,7 @@ struct Forecast: View {
                     .font(.system(size: 25, weight: .medium, design: .default))
                     .foregroundColor(.white)
             VStack{
+                //display current weather
                 Image(systemName: checkWeather(viewModel.title))
                     .renderingMode(.original)
                     .resizable()
@@ -41,6 +44,7 @@ struct Forecast: View {
             }
         }
     }
+    //function to match weather icon to weather status
     func checkWeather(_ weather: String) -> String{
         switch weather{
         case "Clear":
@@ -63,7 +67,7 @@ struct Forecast: View {
             return "sun.max.fill"
         }
     }
-    
+    //formatting current date
     func getCurrentDate() -> String {
         let date = Date()
         let dateFormatter = DateFormatter()
@@ -72,7 +76,7 @@ struct Forecast: View {
         return dateFormatter.string(from: date)
         
     }
-    
+    //check time to see if its nighttime for background
     func checkIfNight() -> Bool {
         var isNight: Bool
         let date = Date()
@@ -89,7 +93,7 @@ struct Forecast: View {
 }
 
 
-
+//function for backgrounf gradient
 struct BackgroundView: View {
     var topColor: Color
     var bottomColor: Color
