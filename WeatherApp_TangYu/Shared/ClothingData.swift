@@ -29,7 +29,3 @@ func loadJson<T: Decodable>(_ filename: String) -> T {
         fatalError("Unable to parse \(filename): \(error)")
     }
 }
-
-//need working function(s) to save clothing data to json (adding, deleting)
-//https://dev.to/arnavmotwani/handling-persistent-data-in-swiftui-2-0-with-json-1h7
-// maybe the link above will help?

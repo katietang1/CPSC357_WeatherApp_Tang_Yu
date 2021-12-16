@@ -1,104 +1,103 @@
 [
     {
-        "id": "aa32jj887hhg55",
         "name": "Sherling Jacket",
         "clothingType": "Top",
         "description": "Keeps you warm and has soft lining!",
         "weatherType": "Snow",
         "imageName": "sherlingjacket.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Bomber Jacket",
         "clothingType": "Top",
         "description": "Warm and sleek",
         "weatherType": "Haze",
         "imageName": "bomberjacket.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Windbreaker",
         "clothingType": "Top",
         "description": "Can handle wind or rain",
         "weatherType": "Rain",
         "imageName": "windbreaker.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Cardigan",
         "clothingType": "Top",
         "description": "Slightly chilly? Put this on",
         "weatherType": "Clouds",
         "imageName": "cardigan.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "T-shirt",
         "clothingType": "Top",
         "description": "Basic casual wear",
         "weatherType": "Clear",
         "imageName": "tshirt.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Tank Top",
         "clothingType": "Top",
         "description": "Wear this when it's hot outside",
         "weatherType": "Clear",
         "imageName": "tanktop.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Blouse",
         "clothingType": "Top",
         "description": "Business casual or a nice brunch",
         "weatherType": "Clouds",
         "imageName": "blouse.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Turtleneck",
         "clothingType": "Top",
         "description": "Keeps your neck warm",
         "weatherType": "Drizzle",
         "imageName": "turtleneck.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Cargo Pants",
         "clothingType": "Pants",
         "description": "Cute and stylish green pants",
         "weatherType": "Haze",
         "imageName": "cargopants.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Sweat Pants",
         "clothingType": "Pants",
         "description": "Warm and soft",
         "weatherType": "Fog",
         "imageName": "sweatpants.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Running Shorts",
         "clothingType": "Pants",
         "description": "Lightweight for activities",
         "weatherType": "Clear",
         "imageName": "runningshorts.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Flare Shorts",
         "clothingType": "Pants",
         "description": "Cute shorts for any casual wear",
         "weatherType": "Clear",
         "imageName": "flareshorts.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Loafers",
         "clothingType": "Shoes",
         "description": "Dress up or dress down",
         "weatherType": "Clouds",
         "imageName": "loafer.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Flip Flops",
         "clothingType": "Shoes",
         "description": "Perfect beach shoes!",
         "weatherType": "Clear",
         "imageName": "flipflop.jpg"
-        
-        "id": "aa32jj887hhg55",
+    },
+    {
         "name": "Chealsa Boots",
         "clothingType": "Shoes",
         "description": "Favorite cold weather boots",
@@ -106,4 +105,3 @@
         "imageName": "boot.jpg"
     }
 ]
-//["Clear", "Rain", "Snow", "Fog", "Haze", "Thunderstorm", "Clouds", "Drizzle"]

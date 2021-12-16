@@ -13,40 +13,29 @@ struct OOTD: View {
         ZStack{
             BackgroundView(topColor:.orange, bottomColor: .purple)
             VStack{
-                Text("Outfit of the Day!")
+                Text("✨Outfit of the Day✨")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                //maybe add the weather temp and type
                 Spacer()
                 HStack{
-                    Text("Top:")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.leading)
-                    Text (chooseTop())
+                    Image(chooseTop())
+                        .resizable()
+                        .frame(width: 250, height: 250)
                         .multilineTextAlignment(.trailing)
                 }
                 Spacer()
                 HStack{
-                    Text("Bottom:")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.leading)
-                    Text (chooseBottom())
+                    Image(chooseBottom())
+                        .resizable()
+                        .frame(width: 200, height: 350)
                         .multilineTextAlignment(.trailing)
                 }
                 Spacer()
                 HStack{
-                    Text("Shoes:")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.leading)
-                    Text (chooseShoes())
+                    Image(chooseShoes())
+                        .resizable()
+                        .frame(width: 150, height: 150)
                         .multilineTextAlignment(.trailing)
                 }
                 Spacer()
@@ -58,27 +47,29 @@ struct OOTD: View {
     
     func chooseTop() -> String{
         var topChosen: String = ""
-        if Int(weather.temp) ?? 0 < 50{
+        if weather.title == "Rain"{
+            topChosen = "windbreaker"
+        }
+        else if Int(weather.temp) ?? 0 <= 40{
+            topChosen = "sherlingjacket"
+        }
+        else if Int(weather.temp) ?? 0 <= 50{
+            topChosen = "bomberjacket"
+        }
+        else if Int(weather.temp) ?? 0 <= 60{
+            topChosen = "cardigan"
+        }
+        else if Int(weather.temp) ?? 0 <= 70{
             topChosen = "turtleneck"
         }
-        else if Int(weather.temp) ?? 0 < 60{
-            if weather.title == "Rain"{
-                topChosen = "turtleneck"
-            }
-            else{
-                topChosen = "blouse"
-            }
+        else if Int(weather.temp) ?? 0 <= 80{
+            topChosen = "blouse"
         }
-        else if Int(weather.temp) ?? 0 < 70{
-            if weather.title == "Clear" || weather.title == "Haze" || weather.title == "Fog" || weather.title == "Clouds" {
-                topChosen = "shirt"
-            }
-            if weather.title == "Rain"{
-                topChosen = "blouse"
-            }
+        else if Int(weather.temp) ?? 0 <= 90{
+            topChosen = "shirt"
         }
-        else if Int(weather.temp) ?? 0 > 90{
-            topChosen = "tank"
+        else if Int(weather.temp) ?? 0 <= 100{
+            topChosen = "tanktop"
         }
         else{
             topChosen = "shirt"
@@ -89,30 +80,21 @@ struct OOTD: View {
     
     func chooseBottom() -> String{
         var bottomChosen: String = ""
-        if Int(weather.temp) ?? 0 < 50{
-            bottomChosen = "pants"
+        
+        if Int(weather.temp) ?? 0 <= 60{
+            bottomChosen = "sweatpants"
         }
-        else if Int(weather.temp) ?? 0 < 60{
-            if weather.title == "Rain"{
-                bottomChosen = "pants"
-            }
-            else{
-                bottomChosen = "pants"
-            }
+        else if Int(weather.temp) ?? 0 <= 70{
+            bottomChosen = "cargopants"
         }
-        else if Int(weather.temp) ?? 0 < 70{
-            if weather.title == "Clear" || weather.title == "Haze" || weather.title == "Fog" || weather.title == "Clouds" {
-                bottomChosen = "shorts"
-            }
-            if weather.title == "Rain"{
-                bottomChosen = "pants"
-            }
+        else if Int(weather.temp) ?? 0 <= 80 || ((Int(weather.temp) ?? 0 > 80 && Int(weather.temp) ?? 0 < 90)){
+            bottomChosen = "flareshorts"
         }
-        else if Int(weather.temp) ?? 0 > 90{
-            bottomChosen = "shorts"
+        else if Int(weather.temp) ?? 0 >= 90{
+            bottomChosen = "runningshorts"
         }
         else{
-            bottomChosen = "pants"
+            bottomChosen = "cargopants"
         }
         
         return bottomChosen
@@ -121,14 +103,17 @@ struct OOTD: View {
     func chooseShoes() -> String{
         var shoesChosen: String = ""
         
-        if weather.title == "Rain"{
-            shoesChosen = "boots"
+        if Int(weather.temp) ?? 0 < 70 || weather.title == "Rain" || weather.title == "Thunderstorm" || weather.title == "Snow" || weather.title == "Drizzle"{
+            shoesChosen = "boot"
         }
-        else if weather.title == "Clear" && Int(weather.temp) ?? 0 > 90 {
-            shoesChosen = "sandals"
+        else if Int(weather.temp) ?? 0 >= 70 && Int(weather.temp) ?? 0 <= 80{
+            shoesChosen = "loafer"
+        }
+        else if Int(weather.temp) ?? 0 >= 90 {
+            shoesChosen = "flipflop"
         }
         else{
-            shoesChosen = "shoes"
+            shoesChosen = "loafer"
         }
         
         return shoesChosen

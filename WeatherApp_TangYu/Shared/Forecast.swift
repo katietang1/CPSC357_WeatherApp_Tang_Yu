@@ -11,24 +11,27 @@ struct Forecast: View {
     @StateObject var viewModel = WeatherViewModel()
     var body: some View {
         ZStack {
-            BackgroundView(topColor: getCurrentTime() ? .black : .blue, bottomColor: getCurrentTime() ? .gray : Color("lightBlue"))
+            BackgroundView(topColor: checkIfNight() ? .black : .blue, bottomColor: checkIfNight() ? .gray : Color("lightBlue"))
             VStack{
                 Spacer()
                 Text(getCurrentDate())
                     .font(.system(size: 20, weight: .medium, design: .default))
                     .foregroundColor(.white)
+                    .padding()
                 Text("Orange")
                     .font(.system(size: 25, weight: .medium, design: .default))
                     .foregroundColor(.white)
             VStack{
-                Image(systemName: getCurrentTime() ? checkWeather(viewModel.title) : checkWeather(viewModel.title))
+                Image(systemName: checkWeather(viewModel.title))
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 180, height:180)
+                    .padding()
                 Text(viewModel.temp)
                     .font(.system(size: 32, weight: .medium, design: .default))
                     .foregroundColor(.white)
+                    .padding()
                 Text(viewModel.title)
                     .font(.system(size: 20, weight: .medium, design: .default))
                     .foregroundColor(.white)
@@ -70,7 +73,7 @@ struct Forecast: View {
         
     }
     
-    func getCurrentTime() -> Bool {
+    func checkIfNight() -> Bool {
         var isNight: Bool
         let date = Date()
         let calendar = Calendar.current
