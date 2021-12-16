@@ -13,32 +13,36 @@ struct OOTD: View {
         ZStack{
             BackgroundView(topColor:.orange, bottomColor: .purple)
             VStack{
-                Text("✨Outfit of the Day✨")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                Spacer()
-                HStack{
-                    Image(chooseTop())
-                        .resizable()
-                        .frame(width: 250, height: 250)
-                        .multilineTextAlignment(.trailing)
-                }
-                Spacer()
-                HStack{
-                    Image(chooseBottom())
-                        .resizable()
-                        .frame(width: 200, height: 350)
-                        .multilineTextAlignment(.trailing)
-                }
-                Spacer()
-                HStack{
-                    Image(chooseShoes())
-                        .resizable()
-                        .frame(width: 150, height: 150)
-                        .multilineTextAlignment(.trailing)
-                }
-                Spacer()
+                    Text("✨Outfit of the Day✨")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                    Spacer()
+                VStack{
+                    HStack{
+                        Image(chooseTop())
+                            .resizable()
+                            .frame(width: 250, height: 250)
+                            .multilineTextAlignment(.trailing)
+                    }.background(Color.white)
+                    Spacer()
+                    HStack{
+                        Image(chooseBottom())
+                            .resizable()
+                            .frame(width: 200, height: 350)
+                            .multilineTextAlignment(.trailing)
+                    }
+                    Spacer()
+                    HStack{
+                        Image(chooseShoes())
+                            .resizable()
+                            .frame(width: 150, height: 150)
+                            .multilineTextAlignment(.trailing)
+                    }
+                    Spacer()
+                }.background(Color.white)
+               
             }
             
         }
