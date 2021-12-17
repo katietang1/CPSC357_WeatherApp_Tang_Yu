@@ -25,7 +25,7 @@ struct Forecast: View {
                     .foregroundColor(.white)
             VStack{
                 //display current weather
-                Image(systemName: checkWeather(viewModel.title))
+                Image(systemName: checkWeather(viewModel.title)) 
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
